@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Palette: Blue & Amber (The "Best" Combination) */
+        :root {
+            --primary-blue: #1e3a8a; /* สีน้ำเงินเข้มดูน่าเชื่อถือ */
+            --accent-gold: #fbbf24;  /* สีส้มทองตัดกันอย่างโดดเด่น */
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary-blue);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue), #3b82f6);
+            color: white;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            border-left: 5px solid var(--accent-gold);
+            padding-left: 15px;
+            margin-bottom: 30px;
+            color: var(--primary-blue);
+        }
+
+        /* Skills Grid */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-bottom: 3px solid var(--primary-blue);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-item b {
+            color: var(--primary-blue);
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #1e293b;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#about">ประวัติ</a>
+        <a href="#skills">ทักษะ</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>[นายโชคณรงค์ ฉิมณรงค์]</h1>
+        <p>Student at Phranakhon Rajabhat University</p>
+    </div>
+
+    <section id="about">
+        <h2>ประวัติย่อ (About Me)</h2>
+        <p>
+            สวัสดีครับ ผมนายโชคณรงค์ ฉิมณรงค์ ชื่อเล่นชื่อสกายแต่เพื่อนชอบเรียกกายไม่รู้ทำไมครับ
+            อายุ 20 ปี ชอบเล่นบาสมากๆๆๆแบบเข้าเส้นแล้วก็ชอบนอนกับกินไม่ต่างกันครับ เวลาว่างชอบเล่นเกมแนว First-Person-Shooting เป็นชีวิตจิตใจและมีคติประจำใจคือ เรื่องเรียนไม่มากีฬาไม่ขาด ครับ?!
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>ทักษะ (Skills)</h2>
+        <div class="skills-container">
+            <div class="skill-card">เล่นบาสเก็ตบอล</div>
+            <div class="skill-card">Basic Eng</div>
+            <div class="skill-card">นอนได้ทั้งวัน</div>
+            <div class="skill-card">พูดเขมรได้คำเดียว</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>ช่องทางติดต่อ (Contact)</h2>
+        <div class="contact-info">
+            <div class="contact-item"><b>Email:</b> choknarong4567@gmail.com</div>
+            <div class="contact-item"><b>GitHub:</b> github.com/Skysky0072</div>
+            <div class="contact-item"><b>Phone:</b> 088-491-2420</div>
+            <div class="contact-item"><b>Location:</b> กรุงเทพมหานคร, ประเทศไทย</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Personal Portfolio. สร้างสรรค์โดย [นายโชคณรงค์ ฉิมณรงค์]</p>
+    </footer>
+
+</body>
+</html>
